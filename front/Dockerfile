@@ -8,6 +8,6 @@ ADD front/requirements.txt /front
 
 RUN pip install -r requirements.txt
 
-ADD front/app.py front/
+ADD front/app.py /front
 
 CMD ["python", "app.py"]
