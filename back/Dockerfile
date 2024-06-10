@@ -2,11 +2,11 @@ FROM python:3.6
 
 EXPOSE 5000
 
-WORKDIR /front
+WORKDIR /back
 
-ADD front/requirements.txt /front
+ADD back/requirements.txt /back
 
 RUN pip install -r requirements.txt
 
-ADD front/app.py /front
+ADD back/app.py /back
 CMD ["python", "app.py"]
